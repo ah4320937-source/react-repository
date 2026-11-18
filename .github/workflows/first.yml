@@ -19,7 +19,10 @@ jobs:
       - name: install dependencies
         run: npm ci
 
-      - name: test eslint
+      # -name: test eslint
+      #   run: npm run lint
+
+      - name: test oxlint
         run: npm run lint
 
       - name: make react build
