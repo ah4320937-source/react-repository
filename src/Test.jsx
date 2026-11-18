@@ -8,7 +8,7 @@ test("renders the App component without crashing", () => {
 
   const heading = screen.getByRole("heading", {
     level: 1,
-    name: /Welcome to ali hassan/i,
+    name: /Welcome to Vite \+ React/i,
   });
 
   expect(heading).toBeInTheDocument();
