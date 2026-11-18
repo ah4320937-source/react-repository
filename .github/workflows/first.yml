@@ -1,4 +1,5 @@
 name: first workflow
+
 on:
   push:
   pull_request:
@@ -19,11 +20,11 @@ jobs:
       - name: install dependencies
         run: npm ci
 
-      # -name: test eslint
-      #   run: npm run lint
-
       - name: test oxlint
         run: npm run lint
+
+      - name: test case
+        run: npm run test
 
       - name: make react build
         run: npm run build
