@@ -1,8 +1,7 @@
 name: first workflow
 on:
   push:
-    branches:
-      - main
+  pull_request:
 
 jobs:
   first_job:
@@ -19,6 +18,9 @@ jobs:
 
       - name: install dependencies
         run: npm ci
+
+      - name: test eslint
+        run: npm run lint
 
       - name: make react build
         run: npm run build
