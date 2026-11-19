@@ -9,6 +9,7 @@ function App() {
       <p>{`Count: ${count}`}</p>
       <button onClick={() => setCount(count + 1)}>Increase</button>
       <button onClick={() => setCount(0)}>Reset</button>
+      <h1>I'm Ali Hassan</h1>
     </div>
   );
 }
