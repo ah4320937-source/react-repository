@@ -2,8 +2,6 @@ name: first workflow
 
 on:
   push:
-    branches:
-      - main
   pull_request:
 
 permissions:
