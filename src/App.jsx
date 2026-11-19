@@ -1,11 +1,15 @@
-import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [count, setCount] = useState(0);
+
   return (
-    <>
-      <h1>Welcome to Ali Hassan</h1>
-      <h2>New Branch Created</h2>
-    </>
+    <div>
+      <h1>Counter App</h1>
+      <p>{`Count: ${count}`}</p>
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+      <button onClick={() => setCount(0)}>Reset</button>
+    </div>
   );
 }
 
